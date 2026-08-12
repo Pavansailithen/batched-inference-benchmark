@@ -112,6 +112,22 @@ Plots: `results/phase3_latency_vs_arrival_rate.png`, `results/phase3_queue_growt
 - **Phase 2's max-batch-size projection (166) is an untested extrapolation**, not a measured result — see caveat above.
 - **No vLLM baseline comparison yet** (planned next — the highest-leverage remaining addition, since it gives these numbers an external reference point and motivates *why* iteration-level scheduling + paged attention outperform this approach).
 
+## vLLM comparison — attempted, not completed
+
+A vLLM baseline comparison was planned as the highest-leverage stretch addition
+(it would give this project's numbers an external reference point and motivate
+*why* iteration-level scheduling and paged attention outperform static batching).
+
+It was not completed: vLLM does not provide official Windows wheels. `pip install
+vllm` on Windows falls back to building from source, which requires a CUDA
+compilation toolchain (nvcc, matching MSVC build tools) not set up on this
+machine, and failed during package extraction before compilation was even
+attempted. Getting vLLM running would require a Linux environment (WSL2 or
+Docker) — a nontrivial additional setup step, judged out of scope for this
+project's time budget on Windows-only hardware.
+
+This is a documented scope boundary, not an oversight.
+
 ## Hardware caveat
 
 All results are specific to a 4GB-VRAM consumer GPU (GTX 1650) running a 0.5B-parameter model. Numbers here are not comparable to results on datacenter GPUs (A100, H100) or larger models without re-running — both the fixed-overhead-dominates-KV-cache finding (Phase 2) and the ~1.44 req/s throughput ceiling (Phase 3) are direct consequences of this specific hardware/model pairing, not general properties of batched LLM serving.
