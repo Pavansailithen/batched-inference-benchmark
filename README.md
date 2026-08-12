@@ -110,7 +110,6 @@ Plots: `results/phase3_latency_vs_arrival_rate.png`, `results/phase3_queue_growt
 - **Not continuous batching.** This is static batching: once a batch starts generating, it runs to completion before any new request can join. Real continuous batching (Orca, vLLM) inserts new requests at generation-step boundaries. The head-of-line blocking this causes (flagged in Phase 1) is a direct, measurable consequence, visible in this project's own latency variance data.
 - **No admission control.** The Phase 3 queue is intentionally unbounded; a production system would need request shedding under sustained overload.
 - **Phase 2's max-batch-size projection (166) is an untested extrapolation**, not a measured result — see caveat above.
-- **No vLLM baseline comparison yet** (planned next — the highest-leverage remaining addition, since it gives these numbers an external reference point and motivates *why* iteration-level scheduling + paged attention outperform this approach).
 
 ## vLLM comparison — attempted, not completed
 
