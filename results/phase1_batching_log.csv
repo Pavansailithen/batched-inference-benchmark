@@ -1,0 +1,67 @@
+request_id,batch_id,prompt,generated_text,prompt_tokens,generated_tokens,queueing_delay,generation_time,total_latency,batch_size,batch_throughput,trigger_reason,arrival_timestamp,completion_timestamp
+req-burst1-1,batch-1,The capital of France is," Paris. It was founded in 789 AD by Charlemagne, the last king of the Carolingian dynasty. The city has a",5,30,0.001682,4.031296,4.083263,4,29.77,size,70551.314903,70555.398165
+req-burst1-2,batch-1,Define gravity in one sentence:," Gravity is the force that pulls objects towards Earth, causing them to fall and move. 
+
+This statement encapsulates the fundamental concept of gravity as a natural",6,30,0.000186,4.031296,4.081767,4,29.77,size,70551.316399,70555.398165
+req-burst1-3,batch-1,What is the chemical formula for water?," Water is composed of hydrogen and oxygen atoms bonded together in a molecule. The chemical formula for water is H2O.
+The molecular formula for water is",8,30,0.000091,4.031296,4.081671,4,29.77,size,70551.316494,70555.398165
+req-burst1-4,batch-1,Translate 'hello world' into Spanish:," ¡Hola mundo! 
+
+A) Hola Mundo!
+B) ¡Hola Mundo!
+C) ¡Hola Mundo!
+D) ¡Hola Mundo!
+
+Which",8,30,0.000061,4.031296,4.081641,4,29.77,size,70551.316524,70555.398165
+req-trickle1-1,batch-2,Explain the fundamental difference between a process and a thread in modern operating systems.," In addition, provide an example of how these concepts can be used to optimize system performance.
+
+The fundamental difference between a process and a thread in modern operating",16,30,4.074998,2.483837,6.566345,4,48.31,size,70551.325296,70557.891641
+req-trickle1-2,batch-2,Describe the key principles of functional programming and how they differ from object-oriented programming.," Functional programming emphasizes immutability, pure functions, and higher-order functions. It also promotes the use of monads for handling side effects and error handling",16,30,3.769964,2.483837,6.261312,4,48.31,size,70551.630329,70557.891641
+req-burst2-1,batch-2,What are the main advantages of using a transformer architecture over recurrent neural networks?," I'm not sure what you mean by ""main advantages"" in this context. Can you provide more information or clarify your question?
+The main advantage of",15,30,3.467116,2.483837,5.958464,4,48.31,size,70551.933177,70557.891641
+req-burst2-2,batch-2,Summarize the mechanism of action of mRNA vaccines in simple terms.," mRNA vaccines work by inserting a piece of genetic code into cells, which then use this to produce proteins that stimulate an immune response. This allows the body",14,30,3.455324,2.483837,5.946672,4,48.31,size,70551.944969,70557.891641
+req-burst2-3,batch-3,"In computer science, cache invalidation is the process where entries in a cache are replaced or removed when the underlying data changes. It is widely regarded as one of the most challenging problems in distributed architecture. List three main strategies used to achieve cache coherence:", (1) using a single master node for all caches; (2) using multiple masters and multiple slaves; (3) using a single master node,50,30,5.927761,2.821894,8.757056,4,42.52,size,70551.964793,70560.721849
+req-burst2-4,batch-3,"Distributed consensus algorithms like Raft and Paxos ensure fault tolerance across unreliable networks. Contrast the leader election phase in Raft with the synod protocol in Paxos, focusing on quorum requirements and term numbers:"," 
+
+1. **Raft Leader Election Phase**:
+   - **Requirements**: 
+     - The leader must be elected by a majority of nodes.
+",43,30,5.903889,2.821894,8.733185,4,42.52,size,70551.988664,70560.721849
+req-trickle2-1,batch-3,Quantum computing leverages superposition and entanglement to solve certain computational problems asymptotically faster than classical computers. Explain Shor's algorithm for integer factorization and its implications on RSA cryptography:," 
+
+Shor's algorithm is a quantum algorithm that solves the discrete logarithm problem, which is equivalent to finding an integer factor of a composite number n",40,30,5.887875,2.821894,8.717170,4,42.52,size,70552.004679,70560.721849
+req-trickle2-2,batch-3,Zero-knowledge proofs allow one party to prove to another that a statement is true without revealing any information beyond the statement's validity. Briefly discuss zk-SNARKs and zk-STARKs:," What are they, how do they work, and what are their applications? How can I use them in my project?
+Zk-SNARKs",40,30,5.578955,2.821894,8.408251,4,42.52,size,70552.313598,70560.721849
+req-burst1-1,batch-1,The capital of France is," Paris. It was founded in 789 AD by Charlemagne, the last king of the Carolingian dynasty. The city has a",5,30,0.005404,8.836762,8.940913,4,13.58,size,70765.008401,70773.949314
+req-burst1-2,batch-1,Define gravity in one sentence:," Gravity is the force that pulls objects towards Earth, causing them to fall and move. 
+
+This statement encapsulates the fundamental concept of gravity as a natural",6,30,0.000280,8.836762,8.935790,4,13.58,size,70765.013524,70773.949314
+req-burst1-3,batch-1,What is the chemical formula for water?," Water is composed of hydrogen and oxygen atoms bonded together in a molecule. The chemical formula for water is H2O.
+The molecular formula for water is",8,30,0.000113,8.836762,8.935622,4,13.58,size,70765.013692,70773.949314
+req-burst1-4,batch-1,Translate 'hello world' into Spanish:," ¡Hola mundo! 
+
+A) Hola Mundo!
+B) ¡Hola Mundo!
+C) ¡Hola Mundo!
+D) ¡Hola Mundo!
+
+Which",8,30,0.000070,8.836762,8.935580,4,13.58,size,70765.013735,70773.949314
+req-trickle-isolated,batch-2,Explain the fundamental difference between a process and a thread in modern operating systems.," In addition, provide an example of how these concepts can be used to optimize system performance.
+
+The fundamental difference between a process and a thread in modern operating",16,30,0.208531,6.627690,6.855581,1,4.53,timeout,70773.961263,70780.816844
+req-burst2-1,batch-3,Describe the key principles of functional programming and how they differ from object-oriented programming.," Functional programming emphasizes immutability, pure functions, and higher-order functions. It also promotes the use of monads for handling side effects and error handling",16,30,6.592002,6.100039,12.716482,4,19.67,size,70774.226971,70786.943453
+req-burst2-2,batch-3,What are the main advantages of using a transformer architecture over recurrent neural networks?," I'm not sure what you mean by ""main advantages"" in this context. Can you provide more information or clarify your question?
+The main advantage of",15,30,6.568971,6.100039,12.693452,4,19.67,size,70774.250002,70786.943453
+req-burst2-3,batch-3,Summarize the mechanism of action of mRNA vaccines in simple terms.," mRNA vaccines work by inserting a piece of genetic code into cells, which then use this to produce proteins that stimulate an immune response. This allows the body",14,30,6.549440,6.100039,12.673921,4,19.67,size,70774.269532,70786.943453
+req-burst2-4,batch-3,"In computer science, cache invalidation is the process where entries in a cache are replaced or removed when the underlying data changes. It is widely regarded as one of the most challenging problems in distributed architecture. List three main strategies used to achieve cache coherence:", (1) using a single master node for all caches; (2) using multiple masters and multiple slaves; (3) using a single master node,50,30,6.528829,6.100039,12.653309,4,19.67,size,70774.290144,70786.943453
+req-trickle2-1,batch-4,"Distributed consensus algorithms like Raft and Paxos ensure fault tolerance across unreliable networks. Contrast the leader election phase in Raft with the synod protocol in Paxos, focusing on quorum requirements and term numbers:"," 
+
+1. **Raft Leader Election Phase**:
+   - **Requirements**: 
+     - The leader must be elected by a majority of nodes.
+",43,30,12.638309,3.537358,16.185971,3,25.44,timeout,70774.306220,70790.492191
+req-trickle2-2,batch-4,Quantum computing leverages superposition and entanglement to solve certain computational problems asymptotically faster than classical computers. Explain Shor's algorithm for integer factorization and its implications on RSA cryptography:," 
+
+Shor's algorithm is a quantum algorithm that solves the discrete logarithm problem, which is equivalent to finding an integer factor of a composite number n",40,30,12.333511,3.537358,15.881174,3,25.44,timeout,70774.611017,70790.492191
+req-trickle2-3,batch-4,Zero-knowledge proofs allow one party to prove to another that a statement is true without revealing any information beyond the statement's validity. Briefly discuss zk-SNARKs and zk-STARKs:," What are they, how do they work, and what are their applications? How can I use them in my project?
+Zk-SNARKs",40,30,12.027080,3.537358,15.574743,3,25.44,timeout,70774.917448,70790.492191
